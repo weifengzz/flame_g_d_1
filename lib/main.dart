@@ -27,6 +27,7 @@ class MyGame extends FlameGame with HasTappables {
   int dialogLevel = 0;
   final Vector2 buttonSize = Vector2(50.0, 50.0);
   int sceneLevel = 1;
+  bool musicPlaying = false;
 
   TextPaint dialogTextPaint = TextPaint(
     style: const TextStyle(
@@ -136,6 +137,11 @@ class MyGame extends FlameGame with HasTappables {
       case 1:
         sceneLevel = 2;
         dialogLevel = 4;
+        // play music
+        if (!musicPlaying) {
+          FlameAudio.bgm.play('music.mp3');
+          musicPlaying = true;
+        }
         canvas.drawRect(Rect.fromLTWH(0, size[1] - 80, size[0] - 60, 100),
             Paint()..color = Colors.black);
         dialogTextPaint.render(
@@ -179,14 +185,8 @@ class MyGame extends FlameGame with HasTappables {
 
 class DialogButton extends SpriteComponent with Tappable {
   int scene2Level = 0;
-  bool musicPlaying = false;
   @override
   bool onTapDown(TapDownInfo event) {
-    // play music
-    if (!musicPlaying) {
-      FlameAudio.bgm.play('music.mp3');
-      musicPlaying = true;
-    }
     try {
       scene2Level++;
       return true;
