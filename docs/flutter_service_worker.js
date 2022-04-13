@@ -3,8 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "8ae7e312e6b291d0f08efbaf5eb0f59a",
-"assets/assets/audio/music.ogg": "ebd0fe09be55236c1569ea1104e11505",
+  "assets/AssetManifest.json": "5c45fbb3b4811aabae68535a63b3071b",
+"assets/assets/audio/music.mp3": "0836c3ddba80df8efd959d6aa58b4ff3",
 "assets/assets/images/background.png": "87c27b80c0072d934f368088eba67134",
 "assets/assets/images/battle.jpg": "8885c2564fc0bedc8a4bfa49245ceb9f",
 "assets/assets/images/boy.png": "c1178fc4f0aa3e83b943db9b2ca27ed6",
@@ -24,9 +24,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "ef30cf6f56eb15101f58aa5c7a595423",
-"/": "ef30cf6f56eb15101f58aa5c7a595423",
-"main.dart.js": "1a7ebdcfb0883328fc0341a143d402da",
+"index.html": "4ad879657e2147f561685d428e93f503",
+"/": "4ad879657e2147f561685d428e93f503",
+"main.dart.js": "ff422698d1d2daf0f98a0616a5f1c330",
 "manifest.json": "a5b65f40a4908273f7a8114166c3e477",
 "version.json": "1d1c49546540888476bba822a1f94f15"
 };
